@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ page_title }}</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				{% for voce in menu %}
+					<li>
+						<a href="{{ voce.href }}">{{ voce.text }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</header>
+	<h1>
+		{{ titolo }}
+	</h1>
+</body>
+</html>

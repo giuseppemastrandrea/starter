@@ -4,11 +4,67 @@
 	<title>
 		HELLO
 	</title>
+	<link rel="stylesheet" type="text/css" href="dist/index.css">
+	<style type="text/css">
+		
+	</style>
 </head>
 <body>
-	<div class="hello">
-		<h1></h1>
-	</div>
+	<section class="hero"> <!--
+	 -> devo assegnare l'immagine di sfondo a questa section (background-size: cover; nello pseudo elemento ::after mettete il gradiente; min-height: 100vh 
+	
+	 -> inoltre per posizionare corretamente gli elementi "header" e titolo+immagine devo usare flex -> flex-direction: column
+	 justify-content: space-between
+
+	-->
+
+		<header class="header">
+			<div class="logoAndSearch">
+				<h1>
+					<a href="#">
+						<img src="pdb.svg" alt="Produzioni dal Basso">
+					</a>
+				</h1>
+
+				<div class="search-wrapper "> <!-- -> display: flex; justify-content: flex-start; align-items: center -->
+					<img src="lens.svg" alt=""/>
+					<span>Cerca</span>
+				</div>
+			</div>
+
+			<nav class="mainNavigation">
+				<ul>
+					<li>
+						<a href="#">Progetti</a>
+					</li>
+					<li>
+						<a href="#">Network</a>
+					</li>
+					<li>
+						<a href="#">Come funziona</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<div class="immagine-con-sfondo-bianco">
+						<img src="immagine-itas.png" alt="Itas Network" />
+					</div>
+
+				</div>
+
+				<div class="col-2">
+					<div class="titolo-pagina">
+						 <h3>Crowdfunding Network</h3>
+						 <h2>Itas Solidale</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<script type="text/javascript" src="dist/libs.min.js"></script>
 	<script type="text/javascript" src="dist/index.bundle.js"></script>
 </body>

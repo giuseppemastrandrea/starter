@@ -1,0 +1,14 @@
+/* Per ogni spaziatura verticale presente nel sito andremo a creare 3 classi */
+
+/* Per es. se troviamo 2 spaziature, una di 80px e l'altra di 40px */
+
+.pt-80{
+	padding-top: 80px;
+}
+.pb-80{
+	padding-bottom: 80px;
+}
+.py-80{
+	padding-top: 80px;
+	padding-bottom: 80px;	
+}
