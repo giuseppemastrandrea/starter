@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+
+{% block page_content %}
+	<h2>
+		{{ titolo }}
+	</h2>
+	<div>
+		{{ contenuto_testuale }}
+	</div>
+
+	<div class="table">
+		<table>
+			{% block table_rows %}
+			{% endblock table_rows %}
+		</table>
+	</div>
+{% endblock page_content %}

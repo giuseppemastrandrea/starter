@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>{{ page_title }}</title>
-</head>
-<body>
-	<header>
-		<nav>
-			<ul>
-				{% for voce in menu %}
-					<li>
-						<a href="{{ voce.href }}">{{ voce.text }}</a>
-					</li>
-				{% endfor %}
-			</ul>
-		</nav>
-	</header>
-	<h1>
-		{{ titolo }}
-	</h1>
-</body>
-</html>
+{% extends 'base-lista.html.twig' %}
+
+
+{% block table_rows %}
+	{% for riga in lista %}
+		<tr>
+			<td>
+				{{ riga.first_name }} {{ riga.last_name }}
+			</td>
+			<td>
+				{{ riga.address }}
+			</td>
+			...
+		</tr>
+	{% endfor %}
+{% endblock table_rows %}

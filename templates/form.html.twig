@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+
+{% block page_content %}
+	<form>
+		<div class="formRow">
+			<div class="fieldWrapper">
+				<label for="first_name">Nome:*</label>
+				<div class="field">
+					<input type="text" name="first_name" id="first_name" />
+				</div>
+				<div class="msgWrapper">
+					<div class="error">Campo obbligatorio</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="formRow">
+			<button type="submit">Invia</button>
+		</div>
+	</form>
+{% endblock page_content %}
+
+{% block scripts %}
+	<script type="text/javascript" src="dist/form.bundle.js"></script>
+{% endblock scripts %}
